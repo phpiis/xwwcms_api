@@ -2,6 +2,6 @@
 
 cms程序到这里下载
 https://github.com/hiliqi/hanman
-
 - 官方QQ群：780362399
 - 看云文档：https://www.kancloud.cn/hiliqi/xwx_comic_cms
+- 智博网络 美国服务器提供商提供 http://www.zbusa.com
