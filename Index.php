@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: hiliq
- * Date: 2019/2/2
- * Time: 15:29
+ * Date: 2019/2/9
+ * Time: 21:19
  */
 namespace app\api\controller;
 use app\model\Author;
@@ -37,6 +37,7 @@ class Index extends Controller
                 $book = new Book();
                 $book->author_id = $author->id;
                 $book->book_name = trim($data['book_name']);
+                $book->nick_name = trim($data['nick_name']);
                 $book->tags = trim($data['tags']);
                 $book->src = trim($data['src']);
                 $book->end = trim($data['end']);
