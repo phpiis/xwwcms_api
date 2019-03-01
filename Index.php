@@ -59,7 +59,8 @@ class Index extends Controller
                 $chapter->order = $lastChapterOrder + 1;
                 $chapter->save();
             }
-            preg_match_all('/src=\"(.+?)\"/is', $data['images'], $img_urls);
+            $preg = '/\bsrc\b\s*=\s*[\'\"]?([^\'\"]*)[\'\"]?/i';
+            preg_match_all($preg, $data['images'], $img_urls);
             foreach ($img_urls[1] as $img_url){
                 $photo = new Photo();
                 $photo->chapter_id  = $chapter->id;
